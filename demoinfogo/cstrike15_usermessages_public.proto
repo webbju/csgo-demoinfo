@@ -27,6 +27,8 @@
 //
 //=============================================================================
 
+syntax = "proto2";
+
 // We care more about speed than code size
 option optimize_for = SPEED;
 
@@ -55,8 +57,6 @@ option cc_generic_services = false;
 // An exception to this rule for RTime32 is if the value will frequently be zero rather than set to an actual 
 // time.
 //
-
-import "google/protobuf/descriptor.proto";
 
 // for CMsgVector, etc.
 import "netmessages_public.proto";
